@@ -1,6 +1,6 @@
 {
     "name": "binarix/foundation-pagination",
-    "description": "",
+    "description": "Provides Zurb Foundation styled pagination slider HTML markup to Laravel4",
     "authors": [
         {
             "name": "Jia Miew (John) Tan",
