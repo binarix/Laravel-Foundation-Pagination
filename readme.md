@@ -1,5 +1,3 @@
-'Binarix\FoundationPagination\FoundationPaginationServiceProvider',
-
 This Laravel 4 package extends the built in Twitter Bootstrap styled pagination slider HTML markup to provide Zurb Foundation styled pagination slider HTML markup.
 
 ## Installation
