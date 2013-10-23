@@ -46,7 +46,7 @@ class FoundationPresenter extends BootstrapPresenter {
         // when that is the case. Otherwise, we will give it an active "status".
         if ($this->currentPage <= 1)
         {
-            return '<li class="arrow unavailable"><a href="#">'.$text.'</a></li>';
+            return '<li class="arrow unavailable"><a>'.$text.'</a></li>';
         }
         else
         {
@@ -69,7 +69,7 @@ class FoundationPresenter extends BootstrapPresenter {
         // that is available, so we will make it the "next" link style disabled.
         if ($this->currentPage >= $this->lastPage)
         {
-            return '<li class="arrow unavailable"><a href="#">'.$text.'</a></li>';
+            return '<li class="arrow unavailable"><a>'.$text.'</a></li>';
         }
         else
         {
