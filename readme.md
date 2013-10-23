@@ -17,9 +17,15 @@ Once this operation completes, the next step is to add the service provider. Ope
 
     'Binarix\FoundationPagination\FoundationPaginationServiceProvider',
 
-The final step is to reference the pagination style. Open `app/config/view.php`, and modify the pagination item in the array.
+The final step is to reference one of the the pagination styles. Open `app/config/view.php`, and modify the pagination item in the array.
+
+For normal style use:
 
     'pagination' => 'foundationpagination::slider',
+
+For centered style use:
+
+    'pagination' => 'foundationpagination::slider-center',
 
 That's it! You're all set to go.
 
