@@ -2,11 +2,14 @@ This Laravel 4 package extends the built in Twitter Bootstrap styled pagination 
 
 ## Installation
 
+This release v1.0.0 supports the following versions of Laravel:
+        "laravel/framework": "4.0.*"
+		"laravel/framework": "4.1.*"
+
 Begin by installing this package through Composer. Edit your project's `composer.json` file to require `binarix/foundation-pagination`.
 
     "require": {
-        "laravel/framework": "4.0.*",
-        "binarix/foundation-pagination": "dev-master"
+        "binarix/foundation-pagination": "1.0.*"
     }
 
 Next, update Composer from the Terminal:
