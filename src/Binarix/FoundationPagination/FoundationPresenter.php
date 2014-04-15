@@ -86,6 +86,6 @@ class FoundationPresenter extends BootstrapPresenter {
      */
     public function getDots()
     {
-        return '<li class="unavailable"><a href="#">&hellip;</a></li>';
+        return '<li class="unavailable"><a>&hellip;</a></li>';
     }
 }
