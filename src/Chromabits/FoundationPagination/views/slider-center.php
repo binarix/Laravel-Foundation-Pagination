@@ -1,5 +1,5 @@
 <?php
-    $presenter = new Binarix\FoundationPagination\FoundationPresenter($paginator);
+    $presenter = new Chromabits\FoundationPagination\FoundationPresenter($paginator);
 ?>
 
 <?php if ($paginator->getLastPage() > 1): ?>

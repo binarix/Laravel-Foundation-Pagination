@@ -1,7 +1,11 @@
 {
-    "name": "binarix/foundation-pagination",
-    "description": "Provides Zurb Foundation styled pagination slider HTML markup to Laravel4",
+    "name": "eduard44/foundation-pagination",
+    "description": "Provides Zurb Foundation styled pagination slider HTML markup to Laravel 5",
     "authors": [
+        {
+            "name": "Eduardo Trujillo",
+            "email": "ed@chromabits.com"
+        },
         {
             "name": "Jia Miew (John) Tan",
             "email": "john@binarix.net"
@@ -10,11 +14,12 @@
     "license": "MIT",
     "require": {
         "php": ">=5.3.0",
-        "illuminate/support": "5.*"
+        "illuminate/support": "5.*",
+        "illuminate/pagination": "5.*"
     },
     "autoload": {
         "psr-0": {
-            "Binarix\\FoundationPagination": "src/"
+            "Chromabits\\FoundationPagination": "src/"
         }
     },
     "minimum-stability": "dev"

@@ -1,9 +1,16 @@
-<?php namespace Binarix\FoundationPagination;
+<?php
+
+namespace Chromabits\FoundationPagination;
 
 use Illuminate\Pagination\BootstrapPresenter;
 
-class FoundationPresenter extends BootstrapPresenter {
-
+/**
+ * Class FoundationPresenter
+ *
+ * @package Chromabits\FoundationPagination
+ */
+class FoundationPresenter extends BootstrapPresenter
+{
     /**
      * Create a range of pagination links.
      *
