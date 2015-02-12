@@ -37,5 +37,4 @@ $html = $paginator->render(new FoundationPresenter($paginator));
 ```
 
 For more information on Pagination with Laravel 5, please check out the docs at
-
-    http://laravel.com/docs/pagination
+http://laravel.com/docs/pagination
