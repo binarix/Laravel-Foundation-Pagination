@@ -14,7 +14,7 @@ use Illuminate\Pagination\UrlWindowPresenterTrait;
  */
 class FoundationPresenter implements Presenter
 {
-    use UrlWindowPresenterTrait;
+    use FoundationNextPreviousRendererTrait, UrlWindowPresenterTrait;
 
     /**
      * The paginator implementation.
