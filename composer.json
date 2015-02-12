@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Chromabits\\Pagination": "src/Chromabits/Pagination"
+            "Chromabits\\Pagination\\": "src/Chromabits/Pagination"
         }
     }
 }
