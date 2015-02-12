@@ -15,8 +15,8 @@
         "illuminate/support": "~5.0.2"
     },
     "autoload": {
-        "psr-0": {
-            "Chromabits\\Pagination": "src/"
+        "psr-4": {
+            "Chromabits\\Pagination": "src/Chromabits/Pagination"
         }
     }
 }
