@@ -1,41 +1,40 @@
-This Laravel 4 package extends the built in Twitter Bootstrap styled pagination slider HTML markup to provide Zurb Foundation styled pagination slider HTML markup.
+# foundation-pagination
+
+This Laravel 5 package provides a `FoundationPresenter` class for generating
+Foundation-themed pagination in your applications.
 
 ## Installation
 
-This release v1.0.0 supports the following versions of Laravel:
-        "laravel/framework": "4.0.*"
-		"laravel/framework": "4.1.*"
+This release v2.0.0 supports the following (stable) versions of Laravel:
+        "laravel/framework": "5.0.*"
 
-Begin by installing this package through Composer. Edit your project's `composer.json` file to require `binarix/foundation-pagination`.
+Begin by installing this package through Composer. Edit your project's 
+`composer.json` file to require `eduard44/foundation-pagination`:
 
+```json
     "require": {
-        "binarix/foundation-pagination": "1.0.*"
+        "eduard44/foundation-pagination": "2.0.*"
     }
+```
 
 Next, update Composer from the Terminal:
 
     composer update
 
-Once this operation completes, the next step is to add the service provider. Open `app/config/app.php`, and add a new item to the providers array.
-
-    'Binarix\FoundationPagination\FoundationPaginationServiceProvider',
-
-The final step is to reference one of the the pagination styles. Open `app/config/view.php`, and modify the pagination item in the array.
-
-For normal style use:
-
-    'pagination' => 'foundationpagination::slider',
-
-For centered style use:
-
-    'pagination' => 'foundationpagination::slider-center',
-
-That's it! You're all set to go.
-
 ## Usage
 
-Just use pagination as you would normally and the markups generated for the links will be styled for Zurb Foundation framework.
+Laravel 5 does not provide an easy mechanism for replacing the built-in
+Bootstrap presenter; This means that you need to manually instantiate the
+presenter every time you wish to render pagination:
 
-For more information on Pagination with Laravel 4, please check out the docs at
+```php
+use App\Models\Post;
+use Chromabits\Pagination\FoundationPresenter;
 
-    http://laravel.com/docs/pagination
+$paginator = Post::query()->paginate();
+
+$html = $paginator->render(new FoundationPresenter($paginator));
+```
+
+For more information on Pagination with Laravel 5, please check out the docs at
+http://laravel.com/docs/pagination
